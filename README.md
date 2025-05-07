@@ -74,5 +74,5 @@ git remote
 
 git remote -v
 
-git push --upstream <remote-alias> <local-branch-name>
+git push --set-upstream <remote-alias> <local-branch-name>
 
