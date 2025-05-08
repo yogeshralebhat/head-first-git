@@ -1,24 +1,10 @@
 # To be sorted into chapters
 
-git add <file-name>
-
-git branch
-
-git branch <new-branch-name>
-
 git branch -m [branch-name] <new-branch-name>
 
 git branch -d <branch-name>
 
-git commit -m <commit-message>
-
 git commit --amend -m <commit-message>
-
-git config [--global] --list
-
-git config [--global] user.name <user-name>
-
-git config [--global] user.email <user-email>
 
 git diff
 
@@ -54,14 +40,31 @@ git rm <file-name>
 
 git rm -r <directory-name>
 
-git swith <branch-name>
+# Chapter 01
 
-git switch [-c | --create] <branch-name>
+git init
+
+git config [--global] --list
+
+git config [--global] user.name <user-name>
+
+git config [--global] user.email <user-email>
+
+git add <file-name>
+
+git commit -m <commit-message>
 
 git status
 
-# Chapter 01
-git init
+# Chapter 02
+
+git branch
+
+git branch <new-branch-name>
+
+git swith <branch-name>
+
+git switch [-c | --create] <branch-name>
 
 # Chapter 05
 git clone <remote-repository-url>
