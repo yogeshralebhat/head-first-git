@@ -98,3 +98,7 @@ git branch -a | --all
 git push -d remote-name branch-name
 - This command will push the branch deletion.
 This will first delete the remote branch and then delete the remote tracking brach.
+
+git fetch -p | --prune
+In addition to what **git fetch** does, adding the -p (shorthand for --prune) flag
+deletes the remote tracking branches if their remote counterpart branches are deleted.
