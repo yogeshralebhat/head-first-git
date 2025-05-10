@@ -94,3 +94,7 @@ This command, however, does not make any changes to the local branches.
 
 git branch -a | --all
 - Lists all the branches including local branches and remote tracking branches
+
+git push -d remote-name branch-name
+- This command will push the branch deletion.
+This will first delete the remote branch and then delete the remote tracking brach.
