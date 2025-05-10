@@ -77,5 +77,12 @@ git remote
 
 git remote -v
 
+git remote -r
+
 git push --set-upstream <remote-alias> <local-branch-name>
 
+# Chapter06
+
+git clone URL folder-name
+
+git pull
