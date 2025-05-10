@@ -88,3 +88,9 @@ git clone URL folder-name
 git pull
 
 git fetch
+- This command fetches all the new commits and branches from the remote repository
+into the local repository. It also updates the remote tracking branches.
+This command, however, does not make any changes to the local branches.
+
+git branch -a | --all
+- Lists all the branches including local branches and remote tracking branches
