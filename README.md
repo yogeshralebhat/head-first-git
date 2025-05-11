@@ -125,3 +125,36 @@ If you want to find the changes to the from a perticular commit then provide the
 of that commit.
 For example:
 git blame b993dc7 test.md
+
+* git grep search-string
+The git grep command is used to search a given string in all the files that are
+"tracked" by git. The git grep command will search the files in index and object database.
+
+The git grep will not search in the files outside the repository or any untracked files
+in the working directory.
+
+Each line from the output of the git grep command will show the name of the file and 
+the line that contains the given search string.
+If the file contains more than one occurance of the search string then output will
+list the file name multiple times along with the matching line.
+
+* git grep "search string"
+If the search string contains any spaces then enclose the whole search string in either
+dobule quotes or single quotes.
+
+* git grep -i | --ignore-case search-string
+If you want to search the given string irrespictive of the case then use -i (or the
+lognhand --ignore-case) flag.
+
+* git grep -n | --line search-string.
+If you want to see the line number along with the file name then use -n (or the
+longhand --line) flag.
+
+* git grep -l | --name-only search-string
+If you want only the name of the files that contain the given search string then
+use -l (or the longhand --name-only) flag.
+When this flag is used, a file name will be listed only once even if the file 
+contains multiple occurances of the search string.
+
+You can ofcourse make use of different combinations of these flags based on 
+your needs.
