@@ -81,7 +81,7 @@ git remote -r
 
 git push --set-upstream | -u remote-alias local-branch-name
 
-# Chapter06
+# Chapter 06
 
 git clone URL folder-name
 
@@ -100,5 +100,16 @@ git push -d remote-name branch-name
 This will first delete the remote branch and then delete the remote tracking brach.
 
 git fetch -p | --prune
-In addition to what **git fetch** does, adding the -p (shorthand for --prune) flag
+- In addition to what **git fetch** does, adding the -p (shorthand for --prune) flag
 deletes the remote tracking branches if their remote counterpart branches are deleted.
+
+# Chapter 07
+
+* git blame file-name
+This command helps to find the information related to changes made to the file.
+The information includes who made the change, to what line, on which date, the message
+used during commit and the id of the commit that introduced this change.
+
+* git blame -s | --supress file-name
+If you don't want to see author and timestamp information then use -s or --supress flag.
+
