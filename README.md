@@ -146,9 +146,9 @@ dobule quotes or single quotes.
 If you want to search the given string irrespictive of the case then use -i (or the
 lognhand --ignore-case) flag.
 
-* git grep -n | --line search-string.
+* git grep -n | --line-number search-string.
 If you want to see the line number along with the file name then use -n (or the
-longhand --line) flag.
+longhand --line-number) flag.
 
 * git grep -l | --name-only search-string
 If you want only the name of the files that contain the given search string then
@@ -158,3 +158,31 @@ contains multiple occurances of the search string.
 
 You can ofcourse make use of different combinations of these flags based on 
 your needs.
+
+* git log -S search-string
+
+* git log -S search-string file-name
+
+* git log -p | --patch 
+
+* git log -S search-string -p
+
+* git log -S search-string -p --word-diff
+
+* git log -S search-string -p --word-diff --oneline --graph
+
+* git log -G search-string
+
+* git log -G search-string -p --word-diff --oneline --graph
+
+* git log --grep search-string
+
+* git checkout commit-id
+
+* git bisect start
+
+* git bisect bad commit-id
+
+* git bisect good commit-id
+
+* git bisect reset
