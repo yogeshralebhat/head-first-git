@@ -113,3 +113,15 @@ used during commit and the id of the commit that introduced this change.
 * git blame -s | --supress file-name
 If you don't want to see author and timestamp information then use -s or --supress flag.
 
+* git blame commit-id file-name
+The git blame command, by default, will show changes to the file till the commit where
+HEAD is pointing at.
+For example:
+git blame test.md
+is similar to
+git blame HEAD test.md
+
+If you want to find the changes to the from a perticular commit then provide the ID
+of that commit.
+For example:
+git blame b993dc7 test.md
