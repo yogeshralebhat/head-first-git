@@ -209,4 +209,53 @@ your needs.
 
 * git config --global alias.name "expands to what"
 
+# Appendix
+
+- git tag command:
+Tags, like branches, are also a named references to commits,
+except that once they are created, they **never** move.
+They are also stored as git's commit history.
+
+Tags are created to make a note of "landmarks" in a project history.
+For example:
+    To mark a specific version of the software.
+    To mark the fix of a particularly nasty bug.
+
+
+- git tag tag-name
+To create a tag provide a name to the git tag command.
+
+The tag name rules are same as that of branch.
+Tag name cannot have a space. If required replace with hyphen (-).
+Tag name can also a forward slash (/) and / or a period (.).
+Avoid creating tags with the name of branches. Instead use
+names which signify the milestone.
+For example:
+    git tag v1.0.0
+
+Creating a tag by providing only the tag name will create
+a tag on the commit which HEAD is currently pointing to.
+
+- git tag tag-name commit-id
+If tag needs to be created for a perticular commit then
+provide the id of that commit to git tag command.
+For example:
+    git tag v1.5.3 b3fc8de
+
+- git tag -l | --list
+To see all the tags from the commit history use -l
+(shorthand for --list) flag.
+
+**Synchronize tags with remote**
+To push the tags to the remote use --tags flag
+with the git push command.
+
+To retrieve the tags from the remote use --tags
+flg with git fetch / pull command.
+
+**Serious Coding**
+When a tag is created for a perticular commit then
+that commit becomes reachable even if there is no
+child commit or branch referring to that commit.
+
 
