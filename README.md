@@ -186,3 +186,27 @@ your needs.
 * git bisect good commit-id
 
 * git bisect reset
+
+# Chapter 08
+
+* git config --local section.key value
+
+* git config --global --unset section.key
+
+* git config --local --unset section.key
+
+* git config --list
+
+* git config --list --show-origin
+
+* git config --global --list
+
+* git config --local --list
+
+* git config --global --list --show-origin
+
+* git config --local --list --show-origin
+
+* git config --global alias.name "expands to what"
+
+
